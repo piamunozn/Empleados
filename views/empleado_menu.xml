@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="empleado_menu"
+              name="Empleados" />
+
+    <act_window id="action_empleado_view"
+      name="lista de empleados"
+      res_model="empleados.empleado"
+      view_mode="tree,form"
+    />
+
+    <menuitem id="menu_empleados"
+              name="empleado"
+              action="action_empleado_view"
+              parent="empleado_menu" />
+    />
+
+    <act_window id="action_departamento"
+      name="departamento"
+      res_model="empleados.departamento"
+      view_mode="tree,form"
+    />
+
+    <menuitem id="menu_departamentos"
+              name="departamento"
+              action="action_departamento"
+              parent="empleado_menu" />
+    />
+
+</odoo>

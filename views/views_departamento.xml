@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <record id="departamento_list_view" model="ir.ui.view">
+    <field name="name">departamento.list.view</field>
+    <field name="model">empleados.departamento</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+        </tree>
+    </field>
+  </record>
+
+  <record id="departamento_form_view" model="ir.ui.view">
+    <field name="name">departamento.form.view</field>
+    <field name="model">empleados.departamento</field>
+    <field name="arch" type="xml">
+        <form>
+          <group>
+            <group string="Información departamento">
+             <field name="name"/>
+            </group>
+          </group>
+        </form>
+    </field>
+  </record>
+
+ 
+    
+  
+  
+
+</odoo>
